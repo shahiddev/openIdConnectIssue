@@ -44,26 +44,14 @@ namespace openIdConnectIssue
                 {
                     options.Authority = "https://demo.identityserver.io/";
                     options.ClientId = "implicit";
-                    options.SaveTokens = true;
-
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        NameClaimType = "name",
-                        RoleClaimType = "role"
-                    };
+                   
 
 
                 }).AddOpenIdConnect("idservoidc2", "OpenID Connect 2", options =>
                 {
                     options.Authority = "https://demo.identityserver.io/";
                     options.ClientId = "implicit";
-                    options.SaveTokens = true;
-
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        NameClaimType = "name",
-                        RoleClaimType = "role"
-                    };
+                  
                 });
         }
 
