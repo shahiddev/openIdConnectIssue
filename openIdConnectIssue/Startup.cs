@@ -52,6 +52,11 @@ namespace openIdConnectIssue
                     options.Authority = "https://demo.identityserver.io/";
                     options.ClientId = "implicit";
                   
+                }).AddOpenIdConnect("idservoidc3", "OpenID Connect 3", options =>
+                {
+                    options.Authority = "https://demo.identityserver.io/";
+                    options.ClientId = "implicit";
+
                 });
         }
 
